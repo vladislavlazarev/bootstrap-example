@@ -3,6 +3,7 @@
 @import "./var";
 @import "./components/section";
 @import "./components/navbar";
+@import "./components/second-section";
 
 @font-face {
   font-family: "Frankfurter_Russia";
@@ -13,3 +14,8 @@
   src: url("../fonts/Comfortaa-Regular.ttf");
 }
 
+
+
+img {
+  max-width: 100%;
+}

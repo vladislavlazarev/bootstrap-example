@@ -1,0 +1,48 @@
+-
+ var rows = [
+   [
+     {
+     url: "./assets/images/card_bouquet1.png",
+     customClass: "first-flower",
+     colMd: "col-md-6"
+     },
+     {
+     url: "./assets/images/card_bouquet2.png",
+     customClass: "second-flower",
+     colMd: "col-md-6"
+     }
+   ],
+   [
+     {
+     url:"./assets/images/card_bouquet3.png",
+     customClass:"third-flower",
+     colMd: "col-md-4"
+     },
+     {
+     url:"./assets/images/card_bouquet4.png",
+     customClass:"fourth-flower",
+     colMd: "col-md-4"
+     },
+     {
+     url:"./assets/images/card_bouquet5.png",
+     customClass: "fifth-flower",
+     colMd: "col-md-4"
+     }
+   ]
+  ];
+
+
+
+
+
+
+
+section.section.-second-section
+  .container
+    h1 Наша продукция
+    for row in rows
+      .row
+        for item in row
+          div(class= item.colMd)
+            .flower(class=item.customClass)
+              img(src=item.url)
